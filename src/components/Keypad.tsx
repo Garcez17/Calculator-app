@@ -1,6 +1,13 @@
+import { useCalc } from "../hooks/useCalc";
 import { Key } from "./Key";
 
 export function Keypad() {
+  // const { insetNumberOne, insetOperator, insetNumberTwo, number1, number2, operator } = useCalc();
+
+  // function handleTypedKey(number: number) {
+  //   insetNumberOne(number);
+  // }
+
   return (
     <section className="flex flex-col gap-4 flex-1 bg-blue-500 rounded-xl p-6">
       <div className="grid grid-cols-4 gap-4">

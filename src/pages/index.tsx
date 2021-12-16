@@ -5,7 +5,7 @@ import { Keypad } from "../components/Keypad"
 export default function Home() {
   return (
     <div>
-      <div className="max-w-xl h-screen flex flex-col py-8 px-16 gap-8 m-auto">
+      <div className="max-w-xl h-screen flex flex-col py-8 px-5 sm:px-16 gap-8 m-auto">
         <Header />
         <main className="flex flex-col gap-8">
           <Display />
