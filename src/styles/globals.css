@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-blue-300;
+  @apply text-white;
+
+  font: 700 2rem 'Spartan';
+}
