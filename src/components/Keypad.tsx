@@ -1,15 +1,24 @@
-import { useCalc } from "../hooks/useCalc";
+import { useTheme } from "../hooks/useTheme";
 import { Key } from "./Key";
 
 export function Keypad() {
-  // const { insetNumberOne, insetOperator, insetNumberTwo, number1, number2, operator } = useCalc();
-
-  // function handleTypedKey(number: number) {
-  //   insetNumberOne(number);
-  // }
+  const { theme } = useTheme();
 
   return (
-    <section className="flex flex-col gap-4 flex-1 bg-blue-500 rounded-xl p-6">
+    <section className={`
+      flex 
+      flex-col 
+      gap-4 
+      flex-1 
+      rounded-xl 
+      p-6
+      ${theme === 'blue' ? 
+        'bg-blue-500 ' : 
+        theme === 'light' ? 
+        'bg-grayish-400' :
+        'bg-violet-700 '
+      }
+    `}>
       <div className="grid grid-cols-4 gap-4">
         <Key>7</Key>
         <Key>8</Key>
